@@ -23,5 +23,8 @@ func InitRoute() {
 	}
 
 	// 运行
-	r.Run(utils.HttpPort)
+	err := r.Run(utils.HttpPort)
+	if err != nil {
+		return 
+	}
 }
