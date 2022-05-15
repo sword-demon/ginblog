@@ -21,6 +21,7 @@ func init() {
 		fmt.Println("配置文件错误，请检查文件路径", err)
 	}
 
+	// 从配置中加载数据
 	LoadServer(file)
 	LoadData(file)
 }

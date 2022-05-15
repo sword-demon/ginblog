@@ -7,6 +7,7 @@ import (
 )
 
 func InitRoute() {
+	// 设置运行模式
 	gin.SetMode(utils.AppMode)
 	// 初始化路由 gin.New()
 	// Default 加了2个中间件
@@ -25,6 +26,6 @@ func InitRoute() {
 	// 运行
 	err := r.Run(utils.HttpPort)
 	if err != nil {
-		return 
+		return
 	}
 }
